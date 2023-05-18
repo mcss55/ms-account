@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: ms-account
+  datasource:
+    username: admin
+    password: toor
+    driver-class-name: org.postgresql.Driver
+    url: "jdbc:postgresql://localhost:5433/accountdb"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 0
